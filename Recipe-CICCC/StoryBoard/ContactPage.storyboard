@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QoM-SW-clu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="oFa-q2-lgf">
+            <objects>
+                <viewController id="QoM-SW-clu" customClass="ContactViewController" customModule="Recipe_CICCC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gT-4I-M4g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dh-GG-FHJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="pKi-WE-SDD">
+                                        <rect key="frame" x="8" y="170" width="398" height="189"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlg-mz-RU9">
+                                                <rect key="frame" x="121" y="0.0" width="156.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <color key="textColor" red="1" green="0.8606574755201043" blue="0.16426428244983626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any questions or feedback? Leave us your messages!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1v-bv-HA8">
+                                                <rect key="frame" x="5.5" y="136" width="387.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" red="0.96701663729999998" green="0.73865300420000002" blue="0.2036716938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="BEg-jj-E3E">
+                                        <rect key="frame" x="8" y="454" width="398" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdS-A0-TzJ">
+                                                <rect key="frame" x="99" y="0.0" width="200" height="36"/>
+                                                <color key="backgroundColor" red="0.96848052740000001" green="0.76100769759999998" blue="0.38126343480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="B2c-dK-wjT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Send Email">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="emailSend:" destination="QoM-SW-clu" eventType="touchUpInside" id="8fj-QX-dEO"/>
+                                                    <action selector="emailSend:" destination="gU7-OB-7zl" eventType="touchUpInside" id="ejq-Ub-d8N"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: This email will be sent by Apple Mail. Please make sure you have already downloaded it." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V45-5t-7yk">
+                                                <rect key="frame" x="15.5" y="64" width="367" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" red="0.56475354440000003" green="0.44376916459999999" blue="0.2223275224" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BEg-jj-E3E" secondAttribute="bottom" constant="173" id="7rs-wL-bOO"/>
+                                    <constraint firstItem="0Tp-yJ-EnB" firstAttribute="trailing" secondItem="BEg-jj-E3E" secondAttribute="trailing" constant="8" id="9Ic-Ta-b0O"/>
+                                    <constraint firstItem="pKi-WE-SDD" firstAttribute="top" secondItem="0Tp-yJ-EnB" secondAttribute="top" constant="170" id="JLl-OF-u35"/>
+                                    <constraint firstItem="0Tp-yJ-EnB" firstAttribute="trailing" secondItem="pKi-WE-SDD" secondAttribute="trailing" constant="8" id="Z5j-f7-kN7"/>
+                                    <constraint firstItem="BEg-jj-E3E" firstAttribute="centerX" secondItem="7dh-GG-FHJ" secondAttribute="centerX" id="bLH-0g-RS8"/>
+                                    <constraint firstItem="pKi-WE-SDD" firstAttribute="centerX" secondItem="7dh-GG-FHJ" secondAttribute="centerX" id="iQi-ng-krE"/>
+                                    <constraint firstItem="pKi-WE-SDD" firstAttribute="leading" secondItem="0Tp-yJ-EnB" secondAttribute="leading" constant="8" id="l28-V9-vkh"/>
+                                    <constraint firstItem="BEg-jj-E3E" firstAttribute="leading" secondItem="0Tp-yJ-EnB" secondAttribute="leading" constant="8" id="nmk-Fo-SUB"/>
+                                    <constraint firstItem="BEg-jj-E3E" firstAttribute="top" secondItem="pKi-WE-SDD" secondAttribute="bottom" constant="95" id="p2j-Mo-Y7i"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0Tp-yJ-EnB"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="pU6-G0-iSM"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99670392269999997" green="0.9910771478" blue="0.79392304599999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7dh-GG-FHJ" firstAttribute="leading" secondItem="EQ4-9j-F0n" secondAttribute="leading" id="7mg-RT-rhr"/>
+                            <constraint firstItem="7dh-GG-FHJ" firstAttribute="centerX" secondItem="9gT-4I-M4g" secondAttribute="centerX" id="M0u-eZ-Tin"/>
+                            <constraint firstItem="7dh-GG-FHJ" firstAttribute="top" secondItem="9gT-4I-M4g" secondAttribute="top" id="Wtv-Ls-oqh"/>
+                            <constraint firstAttribute="bottom" secondItem="7dh-GG-FHJ" secondAttribute="bottom" constant="20" symbolic="YES" id="dXF-pv-g1l"/>
+                            <constraint firstItem="7dh-GG-FHJ" firstAttribute="trailing" secondItem="EQ4-9j-F0n" secondAttribute="trailing" id="sao-ja-a8Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EQ4-9j-F0n"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="7dh-GG-FHJ" id="pMi-2N-CYY"/>
+                        <outlet property="sendBtn" destination="rdS-A0-TzJ" id="1CX-jX-njU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uB3-NF-FBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gU7-OB-7zl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-478.26086956521743" y="-152.00892857142856"/>
+        </scene>
+    </scenes>
+</document>
